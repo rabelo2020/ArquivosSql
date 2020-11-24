@@ -15,4 +15,6 @@ select * from restaurante r where r.nome like '%comida%' limit 0, 1;
 select * from restaurante r where r.nome like '%comida%' ORDER BY taxa_frete limit 0, 2;
 select sum(r.taxa_frete) as Quantidade from restaurante r ;
 select sum(r.taxa_frete) as total from restaurante r ;
+select distinct(r.cozinha_id)as Valores_Unico from restaurante r;
+select count(cozinha_id) as Qtd_Cozinha from restaurante r where r.cozinha_id=2;
 
