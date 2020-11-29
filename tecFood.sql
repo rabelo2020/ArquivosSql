@@ -22,4 +22,24 @@ select * from restaurante where nome like '%mi%' and cozinha_id= 6;
 select * from restaurante where nome like '%mida%' and taxa_frete between 4 and 20;
 update Restaurante set taxa_frete =0 where cozinha_id =1;
 update restaurante set nome="Restaurante Japa" where id=6;
+select distinct(r.cozinha_id), r.nome, r.taxa_frete, c.nome from restaurante r inner join cozinha c;
+select * from restaurante where taxa_frete > 10 && taxa_frete < 15;
+select * from restaurante where taxa_frete between 10 and 15;
 
+select utc_timestamp;
+
+use tecfood;
+show tables;
+desc restaurante;
+insert into restaurante (nome, taxa_frete, cozinha_id, data_cadastro, data_atualizacao) 
+values ('Bar da Maria', 6.72, 2, utc_timestamp, utc_timestamp);
+
+select * from restaurante limit 0,2;
+select r.nome as Restaurante, r.taxa_frete as Valor_Frete, c.nome as Cozinha from restaurante r
+ join cozinha c where r.cozinha_id = c.id;
+ select r.nome as Restaurante, r.taxa_frete as Valor_Frete, c.nome as Cozinha from restaurante r join cozinha c 
+     where r.cozinha_id = c.id order by r.id;
+
+
+     
+     
