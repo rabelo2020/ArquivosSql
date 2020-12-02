@@ -1,0 +1,322 @@
+https://www.treinaweb.com.br/blog/comandos-do-git-que-voce-precisa-conhecer-parte-1/
+https://www.treinaweb.com.br/blog/comandos-do-git-que-voce-precisa-conhecer-parte-2-repositorios-remotos/
+https://www.guj.com.br/t/comparando-bigdecimais/39787
+
+rabelosantos2020@gmail.com
+rabelo2020
+
+gitHub
+rabelosantos2020@gmail.com
+ar231284
+-----------------------------------------------
+kaspersky
+adielmorabelo@gmail.com
+Ars231284
+
+Oracle
+adielmorabelo@gmail.com
+Ar231284
+
+/*Jasper Reports*/
+adielmorabelo@gmail.com
+Ars231284.
+
+/*spotify*/
+adielmorabelo@gmail.com
+jsfd78423902.
+
+/* CONTA NO HEROKU 
+adielmorabelo@gmail.com
+Ars231284.
+
+*/
+Swagger
+adielmorabelo@gmail.com
+ars231284
+
+/* CONTA NO GITHUB
+adielmorabelo@gmail.com
+ ar231284
+ 
+ adielmo.rabelo@yahoo.com.br
+  Ars231284.
+  adielmoRabelo
+
+https://woliveiras.com.br/posts/comandos-mais-utilizados-no-git/#Iniciarumrepositrio
+
+*/
+/* CONTA NO AMAZON S3 
+adielmorabelo@gmail.com
+https://console.aws.amazon.com/billing/home#/paymentmethods
+adielmo
+Ars2020!
+
+*/
+	  // ERRO //
+*** Please tell me who you are.
+
+  /*
+   COMANDOS DO GITHUB
+   https://gist.github.com/pedronauck/5576685
+   
+ */  
+
+Run
+
+git config --global user.email "you@example.com"
+git config --global user.name "Your Name"
+
+git config --global core.editor emacs
+git config --list
+
+to set your account's default identity.
+Omit --global to set the identity only in this repository.
+
+---------------------------------//--------------------------------------
+           //SOLUÇÃO //
+git config alias.paulcommit "-c user.name='Paul Draper' -c user.email='my@email.org' commit"
+
+
+
+adielmocommit - m ''
+
+git push heroku master
+
+---------------------------------//--------------------------------------
+CRIANDO BD --> heroku addons:create heroku-postgresql:hobby-dev
+
+// SUBINDO ALTERAÇÃO NO HEROKU//
+git status
+
+git add .
+
+git adielmocommit -m 'msg'
+
+git push -u heroku master
+
+heroku logs --tail
+
+ctrl + c (para sair)
+
+heroku open
+
+clear  (cls)(para limpar terminal)
+
+------------------------------------------------------------------------------------
+           APAGAR UMA APLICAÇÃO NO HEROKU
+		   
+LOGAR NO HEROKU: Heroku login		   
+heroku apps:destroy --app (nome da aplicação) 
+ 
+Depois --> Repita o nome da aplicação
+
+
+https://ars-vinhos.herokuapp.com/login
+jose   pedro   
+jose   pedro
+
+---------------------------------//--------------------------------------
+// SUBINDO ALTERAÇÃO NO GITHUB//
+
+
+git add .
+
+git status
+
+git commit -m 'primeiro commit'
+
+git push origin master
+
+https://github.com/algaworks/masterclass-turma-sfe-dez2017-multi-tenant
+
+---------------------------------------------------------------------------------------
+        CONFIGURANDO O GIT PELA PRIMEIRA VEZ
+  git config --list
+	  
+ git config --global user.name "YAdielmo"
+ git config --global user.email "adielmorabelo@gmail.com"
+ 
+        CONFIG. O ACESSO AO GITHUB, PARA QUEM CRIOU O .gitIgnore no GITHUB
+ git remote add origin https://github.com/adielmo/POO.git
+ git pull origin master
+ 
+ ssh-keygen -t rsa -b 4096 -C " your_email@example.com "
+ https://www.youtube.com/watch?v=Q2FT7ebeZzE
+
+---------------------------------------------------------------------------------------
+   ENVIANDO ARQUIVO PARA O GITHUB, VIA LINHA COMANDOS
+
+$ git init
+$ git status
+$ git add .
+$ git status || git checkout
+$ git commit -m "Primeiro commit"
+$ git remote add origin git@github.com:tkr-solucoes/Brewer-new
+$ git push -u origin master
+
+ /* 
+ Digita para verificar se está com algum repositório:
+
+git remote -v 
+  CLONAR NO GITHUB
+git clone adielmorabelo@gmail.com:adielmo/github.com/adielmo/SpringMVC
+
+Se, por algum motivo, você não quiser baixar o histórico de um repositório ao cloná-lo, 
+use a flag --depth como no exemplo:
+
+git clone https://github.com/curl/curl.git --depth=1
+   */
+   
+  NOVA ATUALIZAÇÃO P/O MESMO REPOSITÓRIO NO GITHUB
+  
+$ git add .
+$ git status
+$ git commit -m "Segundo commit"
+$ git push origin master  
+
+-------------------------------------------------------------------------
+      REMOVENDO ARQUIVO DO GITHUB
+	  
+	  $ git rm file.txt
+Mudanças a serem submetidas:
+        deleted:    file.txt
+$ git commit -m "file.txt removido"
+
+---------------------------------//--------------------------------------
+Antes de dar os comandos é legal criar um arquivo chamado ".gitignore" na raiz do seu projeto com o seguinte conteúdo:
+
+target/
+.settings/
+.metadata/
+.classpath
+.project
+
+Lembrando que é preciso também que você cadastre sua chave no GitHub. Procure no Google primeiro por:
+
+* gerar chave pública no windows
+* cadastrar chave pública no GitHub
+---------------------------------//--------------------------------------
+/* CRIANDO UM NOVO REPOSITÓRIO GITHUB, PELA LINHA DE COMANDO    */
+
+echo "# JavaApiRest" >> README.md 
+git init 
+git add README.md 
+git commit -m "primeiro commit" 
+git remote add origem https://github.com/adielmo/JavaApiRest.git
+git push -u origem master
+---------------------------------//--------------------------------------
+CRIANDO O ARQUIVO ".gitignore" GIT
+touch .gitignore --> Criar o arquivo
+vim .gitignore --> Abrir arquivo "Esc"
+:q!
+:wq --> Salvar digitar os nomes dos arquivos 
+cat .gitiginore
+---------------------------------------------
+
+DELETANDO ARQUIVO NO GIT
+rm 'Nome do arquivo com sua extensão'
+
+---------------------------------------------
+VERIFICANDO ARQUIVO NO GIT EM UM COMMIT ANTERIOR
+git log --oneline --decorate --all --graph
+git log --name-status
+
+REMOVER ARQUIVO ESPECIFICO DO GIT
+rm nomeDoArquivo com sua extensão
+git rm nomeDoArquivo com sua extensão
+
+git commit -m "Removendo arquivo x ou y"
+
+
+git checkout "Codigo do commit"
+git master --> Voltar
+-----------------------------------
+ATUALIZANDO SEU PROJETO, PEGANDO DO GITHUB
+https://pt.stackoverflow.com/questions/3389/como-atualizar-sincronizar-o-master-do-meu-reposit%C3%B3rio-no-github-com-o-master-or/3397
+https://www.linkedin.com/pulse/dicas-r%C3%A1pidas-git-tiago-rosa-da-costa/?fbclid=IwAR102mTKjtOsn0aDvtK435gnC2dAYsTcaqg3vQMToHt_vhANvtBF2yLcHFs
+git remote -v
+git pull origin master
+
+---------------------------------------------
+
+COMANDOS AVANÇADOS DO GIT EM UMA BRANCH
+git log --> Para sair "q".
+tree .git
+git log --oneline
+git branch
+git branch novaBranch || git checkout -b novaBranch
+git log --oneline --decorate
+git branch
+git checkout master
+Fazer merge dentro da (master) -> git merge novaBranch --> Todos os arquivos q estava na (novaBranch) vao para (master)!
+git merge --abort ==> CANCELANDO O MERGE
+git branch -d novaBranch -->Fazer um delete
+
+https://gist.github.com/leocomelli/2545add34e4fec21ec16
+https://comandosgit.github.io/
+       ALTERANDO FERRAMENTA DE MERGE CONFLITO
+git config --global merge.tool meld ==> ALTERANDO FERRAMENTA DE MERGE 
+git config --list
+
+  QUANDO OCORRER UM CONFLITO USAR O COMANDO
+git mergetool
+
+git diff -w ==> BUSCANDO ALTERAÇÕES SEM ESPAÇOS
+
+git checkout "cod commit" -b "nomeBranch" ==> VOLTAR AO COMMIT ESPECIFICO & CRIANDO UMA NEW BRANCH
+
+git log --pretty=format:"%h -%an, %ar  %s" ==> LOG COMPLETO
+
+=========================================================================
+LISTANDO COMANDOS AVANÇADOS
+ls -la
+ll
+git rm -rf .     ==> Removendo arquivo do Git
+-------------------------------------------------------------------------
+Como alterar o repositório remoto de um diretório de trabalho
+
+git remote set-url origin NOVO_REPOSITORIO_AQUI
+---------------------------------//---------------------------------------
+
+PADRÕES DE PROJETO
+
+1. Factory
+2. Singleton
+3. Observer
+4. Decorator
+
+---------------------------------//--------------------------------------
+https://help.github.com/en/articles/adding-a-remote
+
+git remote rename origin distino
+==============================================================================
+Como atualizar/sincronizar o master do meu repositório no github com o master original
+
+git remote add upstream git@github.com:gatein/gatein-portal.git
+
+De tempos em tempos, sincronize:
+
+$ git checkout master
+$ git fetch upstream
+$ git rebase upstream/master
+
+$ git push origin master
+
+========================================================================
+LIMPANDO AREA STAGE AREA DO GIT, ANTES DE FAZER O COMMIT
+
+git reset HEAD <caminho>
+git reset HEAD *
+
+==========================================
+FECHANDO UMA ISSUES NO GITHUB
+
+git commit -m "Subindo correcoes, fechando uma issues - fix #2"
+
+==============================================================
+DELETANDO UMA BRANCH NO GITHUB
+
+git push origin <NOMEBRANCH> --delete
+ OR
+git push origin :<NomeBranch> 
+

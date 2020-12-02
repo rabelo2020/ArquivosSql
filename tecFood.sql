@@ -39,7 +39,21 @@ select r.nome as Restaurante, r.taxa_frete as Valor_Frete, c.nome as Cozinha fro
  join cozinha c where r.cozinha_id = c.id;
  select r.nome as Restaurante, r.taxa_frete as Valor_Frete, c.nome as Cozinha from restaurante r join cozinha c 
      where r.cozinha_id = c.id order by r.id;
+     
+select p.nome as Nome_Produto, p.ativo, p.preco, p.restaurante_id as codigo_restaurante, r.nome as Restaurante from produto p 
+join restaurante r where p.restaurante_id= r.id order by p.preco desc;     
 
+select p.nome as Nome_Produto, p.ativo, p.preco, r.nome as Restaurante, c.nome as Cozinha from produto p 
+join restaurante r join cozinha c where p.restaurante_id= r.id and r.cozinha_id = c.id order by p.preco desc;
+
+desc restaurante;
+
+select p.nome as Nome_Produto, p.ativo, p.preco, r.nome as Restaurante, c.nome as Cozinha
+ from produto p join restaurante r join cozinha c join cidade ci where p.restaurante_id= r.id 
+ and r.cozinha_id = c.id and r.endereco_cidade_id = ci.id order by p.preco desc;
 
      
+     select * from restaurante;
      
+insert into restaurante (id, nome, taxa_frete, cozinha_id, data_cadastro, data_atualizacao, endereco_cidade_id, endereco_cep, endereco_logradouro, endereco_numero, endereco_bairro) 
+values (1, 'Thai Gourmet', 10, 1, utc_timestamp, utc_timestamp, 1, '38400-999', 'Rua João Pinheiro', '1000', 'Centro');
