@@ -30,6 +30,7 @@ select utc_timestamp;
 
 use tecfood;
 show tables;
+
 desc restaurante;
 insert into restaurante (nome, taxa_frete, cozinha_id, data_cadastro, data_atualizacao) 
 values ('Bar da Maria', 6.72, 2, utc_timestamp, utc_timestamp);
@@ -52,8 +53,37 @@ select p.nome as Nome_Produto, p.ativo, p.preco, r.nome as Restaurante, c.nome a
  from produto p join restaurante r join cozinha c join cidade ci where p.restaurante_id= r.id 
  and r.cozinha_id = c.id and r.endereco_cidade_id = ci.id order by p.preco desc;
 
+     use tecfood;
+     select * from restaurante where id =2;
+     select * from cidade c join estado e where c.estado_id = e.id;
+     insert into Restaurante_forma_pagamento(restaurante_id, forma_pagamento_id) values((1, 3), 1, 1), (4, 2), (2, 1), (2, 3), (3, 1), (3, 2), (3, 3);
      
      select * from restaurante;
+     drop tables usuario_grupo, usuario, restaurante_forma_pagamento, restaurante, produto, permissao, grupo_permissao, grupo, forma_pagamento;
      
-insert into restaurante (id, nome, taxa_frete, cozinha_id, data_cadastro, data_atualizacao, endereco_cidade_id, endereco_cep, endereco_logradouro, endereco_numero, endereco_bairro) 
-values (1, 'Thai Gourmet', 10, 1, utc_timestamp, utc_timestamp, 1, '38400-999', 'Rua João Pinheiro', '1000', 'Centro');
+     select nome, data_cadastro, sum(taxa_frete) as Soma_Taxa_Frete from restaurante group by nome, data_cadastro;
+     
+     use tecfood;
+     show tables;
+     delete from flyway_schema_history where installed_rank = 5;
+     delete from flyway_schema_history where version = "005";
+     
+     select * from flyway_schema_history;
+     drop table flyway_schema_history;
+     select * from restaurante;
+     select * from produto;
+     
+select nome, data_cadastro, sum(taxa_frete) from restaurante group by nome, data_cadastro ;
+select avg(taxa_frete) as Média from restaurante;
+
+select nome, data_cadastro, taxa_frete from restaurante where taxa_frete between 2 and 25 ORDER BY taxa_frete;
+select count(taxa_frete)as Qtd from restaurante where taxa_frete between 2 and 25 ORDER BY taxa_frete;
+
+     
+     
+     
+     
+     
+ 
+
+     
