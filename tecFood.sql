@@ -79,6 +79,8 @@ select avg(taxa_frete) as Média from restaurante;
 select nome, data_cadastro, taxa_frete from restaurante where taxa_frete between 2 and 25 ORDER BY taxa_frete;
 select count(taxa_frete)as Qtd from restaurante where taxa_frete between 2 and 25 ORDER BY taxa_frete;
 
+
+
      
      
      

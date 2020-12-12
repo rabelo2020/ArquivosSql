@@ -158,36 +158,9 @@ PRIMARY KEY (id),
   CONSTRAINT fk_itemPedido_produto FOREIGN KEY (produto_id) REFERENCES produto (id)
   )ENGINE=INNODB DEFAULT CHARSET=utf8;
   
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
+
+
+
 set foreign_key_checks= 0;
 
 delete from cidade;
