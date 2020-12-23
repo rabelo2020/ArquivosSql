@@ -113,6 +113,7 @@ show tables
 
 /* exibindo a estrutura de uma tabela */
 desc cliente;
+use projeto;
 
 /* sintaxe basica de inserção - INSERT INTO TABELA... */
 
@@ -419,7 +420,7 @@ group by departamento;
 SELECT COUNT(*), departamento
 FROM FUNCIONARIOS
 group by departamento
-order by 1;
+order by 2;
 
 WHERE DEPARTAMENTO = 'Filmes' OR DEPARTAMENTO = 'Roupas'
 

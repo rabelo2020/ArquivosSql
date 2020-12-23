@@ -2,8 +2,10 @@ use tecfood;
 
 show tables;
 desc cozinha;
-select * from cozinha;
+select distinct nome from cozinha;
 desc restaurante;
+
+
 select * from restaurante;
 select * from tecfood.Cozinha c where c.nome like '%ana%' order by c.nome;
 select * from restaurante r ORDER BY r.taxa_frete desc;

@@ -48,29 +48,8 @@ FROM livros WHERE data_publicacao
 
 desc livros;
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+update cliente set data_cadastro='2020/12/12' where id=3;
+update cliente set endereco='Centro-Av.Rio Branco-Rio de Janairo-RJ' where id=1;
 
 
 INSERT INTO LIVROS(nome_livro, nome_autor, sexo_autor, numeros_paginas, nome_editora, valor_livro, uf, data_publicacao) VALUES('Cavaleiro Real','Ana Claudia','F',465,'Atlas',49.9,'RJ','2009/02/04');
