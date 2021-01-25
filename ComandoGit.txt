@@ -320,3 +320,12 @@ git push origin <NOMEBRANCH> --delete
  OR
 git push origin :<NomeBranch> 
 
+==============================================
+Ao fazaer um Push origin
+Error:403 
+
+Painel de Controle\Contas de Usuário e Segurança Familiar\Gerenciador de Credenciais
+
+Lá no final, você irá encontrar o item "Credenciais Genéricas" com o link do Github ou do Gitbucket
+ ou dos dois Ai é só você clicar na setinha e editar o nome de usuário e a senha.
+
